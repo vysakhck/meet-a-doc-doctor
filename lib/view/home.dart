@@ -1,5 +1,7 @@
 import 'package:doctor_app/class.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -44,12 +46,12 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 28),
-              const Text(
+              Text(
                 'Video Appoinments',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
               ),
               SizedBox(
-                height: 32,
+                height: 22,
               ),
               ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
